@@ -38,7 +38,7 @@ public class controller {
     }
 
     @DeleteMapping("id/{myId}")
-    public JournalEntry DeleteEntryById(@PathVariable long myId) {
+    public JournalEntry DeleteEntryById(@PathVariable String myId) {
         return journal.remove(myId);
     }
 
